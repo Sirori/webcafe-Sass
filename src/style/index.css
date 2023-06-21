@@ -675,7 +675,7 @@ legend {
   position: relative;
 }
 .board__item {
-  margin: 20px 0;
+  margin: 8px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -695,6 +695,17 @@ legend {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.twitter__userProfile {
+  aspect-ratio: 1;
+}
+.twitter__userProfileImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 30% 40%;
 }
 
 /*# sourceMappingURL=index.css.map */
