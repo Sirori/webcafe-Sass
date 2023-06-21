@@ -11,17 +11,16 @@
     background: $brown;
     color: $white;
   }
-
   &--outline {
     color: $brown;
     border: 1px solid currentColor;
   }
 }
 
-//햄버거 버튼
+// 햄버거 버튼
 .button--burger {
-
   @include mobile {
+    background: transparent;
     width: rem(36px);
     height: rem(36px);
     border: 0;
@@ -30,20 +29,23 @@
     top: rem(65px);
     right: rem(20px);
 
-    &BarTop, &BarMiddle, &BarBottom{
+    &BarTop,
+    &BarMiddle,
+    &BarBottom {
       background: $white;
       width: 100%;
       height: 20%;
       border-radius: rem(10px);
-      left: 0
+      left: 0;
     }
-    &BarTop{
+
+    &BarTop {
       @include posLeftTop;
     }
-    &BarMiddle{
+    &BarMiddle {
       @include posCenterY;
     }
-    &BarBottom{
+    &BarBottom {
       @include posBottomY;
     }
   }
