@@ -22,6 +22,14 @@ $colors: (
   background-image: url(./../assets/images/sprite_main.png);
   background-repeat: no-repeat;
   padding-left: rem(64px);
+  font-size: rem(18px);
+  font-weight: 700;
+  @include flexbox(column, center);
+
+  [class*="enTitle"] {
+    font-size: rem(16px);
+    font-weight: 400;
+  }
 
   $sprites: Book, Board, News, Favorite, Twitter;
   $x: 0;

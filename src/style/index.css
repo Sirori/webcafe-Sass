@@ -392,6 +392,16 @@ legend {
   background-image: url(./../assets/images/sprite_main.png);
   background-repeat: no-repeat;
   padding-left: 4rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.sprite [class*=enTitle] {
+  font-size: 1rem;
+  font-weight: 400;
 }
 .spriteBook {
   background-position: 0 0;
@@ -604,7 +614,7 @@ legend {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: auto;
     grid-column-gap: 1rem;
-    grid-row-gap: 16px;
+    grid-row-gap: 1rem;
   }
 }
 @media (min-width: 768px) {
@@ -616,7 +626,7 @@ legend {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 1.25rem;
-    grid-row-gap: 16px;
+    grid-row-gap: 1rem;
     grid-template-areas: "news news news news news news news news news news news news" "book book book book twitter twitter twitter twitter twitter favorite favorite favorite" "book book book book . board board board board board board board";
   }
 }
@@ -645,12 +655,46 @@ legend {
   text-align: center;
 }
 .book__info {
-  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 0.5rem;
   margin-bottom: 1rem;
+}
+.ratingStar {
+  text-align: center;
+  width: 100%;
 }
 
 .iframeWrapper {
   aspect-ratio: 1.7777777778;
+}
+
+.board {
+  position: relative;
+}
+.board__item {
+  margin: 20px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  column-gap: 0.5rem;
+}
+.board__link {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__date {
+  white-space: nowrap;
+}
+.board__more {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

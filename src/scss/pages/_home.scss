@@ -56,8 +56,14 @@
   }
 
   &__info {
-    text-align: center;
+    @include flexbox($wrap: wrap, $justify: center);
+    column-gap: rem(8px);
     margin-bottom: rem(16px);
+  }
+
+  @at-root .ratingStar {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -70,7 +76,26 @@
 
 // 게시판
 .board {
-  
+  position: relative;
+
+  &__item {
+    margin: 20px 0;
+    @include flexbox;
+    column-gap: rem(8px);
+  }
+
+  &__link {
+    flex-grow: 1;
+    @include textOver;
+  }
+
+  &__date {
+    white-space: nowrap;
+  }
+
+  &__more {
+    @include posRightTop;
+  }
 }
 
 // 인기 사이트
